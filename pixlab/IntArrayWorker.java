@@ -109,4 +109,15 @@ public class IntArrayWorker
           }
       return 1;
     }
+  public int getLargest(){
+      int max = 0;
+      for (int[]row:matrix)
+          for (int col: row)
+          {
+              if (matrix[row][col]>max)
+              max=matrix[row][col];
+            }
+        return max;
+    }
+  
 }
