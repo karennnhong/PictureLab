@@ -16,7 +16,7 @@ public class IntArrayWorker
    * @return the total of the values in the array
    */
   public int getTotal()
-  {
+  {         
     int total = 0;
     for (int row = 0; row < matrix.length; row++)
     {
@@ -111,13 +111,21 @@ public class IntArrayWorker
     }
   public int getLargest(){
       int max = 0;
-      for (int[]row:matrix)
-          for (int col: row)
+      for (int[] row:matrix)
+          for (int NewMax: row)
           {
-              if (matrix[row][col]>max)
-              max=matrix[row][col];
+              if (NewMax>max)
+              max=NewMax;
             }
         return max;
     }
-  
+  public int getColTotal(int n){
+      int total=0;
+      for (int[] row:matrix)
+
+          {
+              total=row[n];
+            }
+        return total;
+    }
 }
