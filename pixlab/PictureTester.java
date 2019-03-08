@@ -22,7 +22,12 @@ public class PictureTester
     beach.KeepOnlyBlue();
     beach.explore();
     }
-  
+  public static void testNegate(){
+    Picture sashimi = new Picture("Sashimi.jpg");
+    
+    sashimi.Negate();
+    sashimi.explore();
+    }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
